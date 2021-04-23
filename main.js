@@ -4,12 +4,15 @@ let myCalc = "+";
 let myFlg = 1;
 
 
-
 function myValue(myData){
   myFlg = 0;
   myInput += myData;
+  if(myInput < 1){
+    myInput = "";
+  }
   document.myForm.myLine.value = myInput;
 }
+
 
 
 function myCalculate(myData){
